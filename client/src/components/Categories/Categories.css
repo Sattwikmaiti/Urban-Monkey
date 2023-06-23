@@ -1,0 +1,42 @@
+.category{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  gap:4rem;
+}
+.men{
+  background-image:url("./men.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center center;
+  height:350px;
+  width:350px
+}
+.women{
+  background-image:url("./women.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center center;
+  height:350px;
+  width:350px
+}
+.kid{
+  background-image:url("./kids.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center center;
+  height:350px;
+  width:350px
+}
+
+
+h1{
+  font-size: 3rem;
+    color:rgb(139, 103, 59);
+    text-decoration: overline underline;
+    font-family: 'Playfair Display', serif;
+}

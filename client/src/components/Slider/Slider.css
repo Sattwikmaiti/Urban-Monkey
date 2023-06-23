@@ -1,0 +1,5 @@
+ .carosel div img{
+    height:30rem;
+    object-fit: fill;
+    width:100vw
+}

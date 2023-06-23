@@ -1,0 +1,41 @@
+.emailus{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us input{
+    border:none;
+    outline:none;
+    margin:1rem;
+    padding:0.2rem;
+    color:black
+}
+.submit {
+   
+   
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    padding:2rem;
+}
+.submit >button{
+    padding:1rem;
+
+}
+
+.author >input,.email>input{
+    height:3rem;
+}
+
+
+
+.form{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    gap:1rem
+}

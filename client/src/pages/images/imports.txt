@@ -1,0 +1,7 @@
+import p1 from "../images/img1.avif"
+import p2 from "../images/img2.jpg"
+import p3 from "../images/img3.jpg"
+import p4 from "../images/img4.jpg"
+import p5 from "../images/img7.jpg"
+import p6 from "../images/img6.avif"
+

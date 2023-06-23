@@ -1,0 +1,15 @@
+//product
+
+{
+    "title":"ttountain Tshirt",
+    "desc":"A Pure Cotton TShirt,made with fabrics from NorthEast and finely Stiched.",
+    "img1":"https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI",
+    "img2":"https://fastly.picsum.photos/id/60/1920/1200.jpg?hmac=fAMNjl4E_sG_WNUjdU39Kald5QAHQMh-_-TsIbbeDNI",
+    "isnew":false,
+    "categories":["kid"],
+    "size":"xxl",
+    "color":"yellow",
+    "oldPrice":400,
+    "newPrice":300,
+    "price":300
+}

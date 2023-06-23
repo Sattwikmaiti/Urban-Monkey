@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Wix+Madefor+Display:wght@600&display=swap');
+
+.price1{
+  
+    text-decoration: line-through;
+}
+.img1{
+    position:absolute;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.img2{
+    opacity: 1;
+}
+
+
+.img1:hover{
+    opacity:0
+}
+
+.card{
+   
+    margin:1rem
+}
+
+.image img{
+    height:25rem;
+    width:22rem;
+    object-fit: cover;
+    padding:0.5rem;
+    border:5px solid rgb(62, 174, 189)
+}
+.isnew{
+    position: absolute;
+    z-index:99;
+    padding:0.8rem;
+    background-color: rgb(111, 155, 111);
+    color:rgb(155, 178, 199)
+}
+
+.title{
+ font-size:2rem;
+ padding:0.3rem;
+ font-family: 'Playfair Display', serif;
+
+}
+.price1{
+    color:rgb(194, 180, 124);
+    
+}
+.price2{
+    color:green;
+    font-size:1.1rem
+}
+.old{
+    font-family: 'Wix Madefor Display', sans-serif;
+
+}

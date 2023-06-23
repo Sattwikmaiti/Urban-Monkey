@@ -1,0 +1,125 @@
+.imagess{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+.preview img{
+    height:6rem;
+    width:6rem;
+}
+.mainimg img{
+    height:30rem;
+    width:30rem
+}
+.preview{
+    flex:6;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color: aliceblue;
+    
+
+}
+.mainimg{
+    flex:10;
+    padding:1rem;
+    margin:1rem;
+    border:2px solid black;
+    height:fit-content
+}
+
+
+.boxx{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin:1rem;
+    
+   
+
+}
+
+.detailss{
+    font-family: 'Playfair Display',
+     serif;
+    
+    
+     padding:1rem
+}
+
+.cost{
+    font-size:2rem;;
+    font-family: 'Quicksand', sans-serif;
+   
+    
+}
+
+.buttons {
+    background-color: rgb(65, 123, 141);
+    width:4rem;
+    color:aqua
+    
+}
+.buttons button{
+    padding:1rem;
+    background-color: rgb(203, 189, 216);
+    border:none;
+    outline:none;
+   
+    
+}
+.buttons{
+    font-size:2rem
+    ;margin:1rem;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:center ;
+    gap:1rem
+
+}
+.add {
+    display:flex;
+    flex-direction:row;
+    justify-content:center ;
+    gap:1rem;
+    width:10rem;
+    height:3rem;
+    align-items: center;
+    color:rgb(17, 12, 6);
+    background-color: rgb(127, 140, 255);
+
+}
+
+.linksitem{
+    display:flex;
+    flex-direction:row;
+    justify-content:center ;
+    gap:2rem;
+    padding:1rem;
+    font-family: 'Quicksand', sans-serif;
+   background-color:cadetblue;
+   margin:1rem;
+   
+    
+    
+}
+
+.item{
+    border:2px solid white;
+    padding:1rem;
+
+}
+
+.item:hover{
+    border:2px solid rgb(168, 52, 52);
+    color:brown
+
+}
+
+.info{
+    padding-top:1rem;
+    font-family: 'Rajdhani', sans-serif;
+
+}

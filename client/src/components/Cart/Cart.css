@@ -1,0 +1,47 @@
+.cart {
+    position:absolute;
+    right:1rem;
+    height:auto;
+    width:20rem;
+ backdrop-filter:blur(50px);
+ opacity:1;
+
+    color:rgb(59, 84, 105);
+    border:2px dashed black
+}
+
+.short{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:2rem;
+    padding:1rem;
+    border:2px solid white;
+    padding:1rem;
+    margin:0.3rem;
+}
+
+.descshort{
+    font-family: 'Times New Roman', Times, serif;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap:0.4rem;
+   
+}
+
+.payment button{
+padding:1rem;
+    margin:1rem;
+}
+
+.totalprice{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5rem;
+    border:1px solid black;
+    padding:0.4rem;
+    background-color: chartreuse;
+}
+.delete{
+    color:red
+}

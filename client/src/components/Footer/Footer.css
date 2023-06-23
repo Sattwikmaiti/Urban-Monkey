@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100&display=swap');
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+background-color: antiquewhite;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: bold;
+}
+.footer .div{
+    
+    margin:1rem
+}
+
+.cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+    font-family: 'Mogra', monospace;
+background-color: rgba(253, 246, 246, 0.815);
+}
+
+

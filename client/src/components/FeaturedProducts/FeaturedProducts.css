@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@600&family=Wix+Madefor+Display:wght@600&display=swap');
+.carddesign{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:aliceblue;
+    flex-wrap:wrap;
+  }
+
+  .section h3{
+    font-size: 3rem;
+    color:rgb(139, 103, 59);
+    text-decoration: overline underline;
+    font-family: 'Playfair Display', serif;
+  }
+  .section{
+    padding:2rem;
+    background-color: aliceblue;
+    font-family: 'Playfair Display', serif;
+  
+
+  }
+
+  .wrapper{
+    padding:1rem
+  }
+  .desc{
+    font-stretch: expanded;
+  }
+  
