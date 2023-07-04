@@ -1,47 +1,63 @@
-.cart {
-    position:absolute;
-    right:1rem;
-    height:auto;
-    width:20rem;
- backdrop-filter:blur(50px);
- opacity:1;
+.cart{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
 
-    color:rgb(59, 84, 105);
-    border:2px dashed black
+}
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100&display=swap');
+
+.detailcart,.short{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    
+
+
 }
 
 .short{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    gap:2rem;
-    padding:1rem;
-    border:2px solid white;
-    padding:1rem;
-    margin:0.3rem;
-}
-
-.descshort{
-    font-family: 'Times New Roman', Times, serif;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    gap:0.4rem;
-   
-}
-
-.payment button{
-padding:1rem;
+    background-color:gainsboro;
     margin:1rem;
+    padding:1rem
+}
+
+
+.totalprice{
+    position: absolute;
+    top:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:15rem
+}
+.descshort{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.delete{
+    padding:1rem;
+
+}
+
+.subtotal button{
+    padding:1rem;
+    background-color: black;
+    color:aliceblue;
+    outline: none;
+    border: none;
 }
 
 .totalprice{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:1.5rem;
-    border:1px solid black;
-    padding:0.4rem;
-    background-color: chartreuse;
+    padding:1rem;
+    background-color:darkgray
 }
-.delete{
-    color:red
+
+.cart{
+    background-color:rgba(187, 170, 170, 0.363)
 }

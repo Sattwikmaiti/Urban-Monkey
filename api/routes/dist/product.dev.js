@@ -10,7 +10,7 @@ var _require = require("./verifyToken"),
 var router = require("express").Router(); //CREATE
 
 
-router.post("/", verifyTokenAndAdmin, function _callee(req, res) {
+router.post("/", function _callee(req, res) {
   var newProduct, savedProduct;
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {
@@ -38,9 +38,9 @@ router.post("/", verifyTokenAndAdmin, function _callee(req, res) {
       }
     }
   }, null, null, [[1, 8]]);
-}); //UPDATE
+}); //UPDATE "/:id,verifyTokenAndAdmin"
 
-router.put("/:id", verifyTokenAndAdmin, function _callee2(req, res) {
+router.put("/:id", function _callee2(req, res) {
   var updatedProduct;
   return regeneratorRuntime.async(function _callee2$(_context2) {
     while (1) {

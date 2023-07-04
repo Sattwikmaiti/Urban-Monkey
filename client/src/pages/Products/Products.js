@@ -6,7 +6,7 @@ import axios from "axios"
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import { useLocation } from "react-router";
-
+import loadingproduct from "../images/productloader.gif"
 import Card from "../../components/Card/Card.js"
 
 const Products = () => {
@@ -19,6 +19,7 @@ const [sort,setSort]=useState("newest")
 const [filteredProducts, setFilteredProducts] = useState([]);
 const [size,setSize]=useState("")
 const[color,setColor]=useState("")
+const[loading,setloading]=useState(false)
 const filterByBrand = (filteredProducts) => {
   console.log(size)
   // Avoid filter for empty string
@@ -46,6 +47,7 @@ const filterByColor= (filteredProducts) => {
 
 useEffect(() => {
   // console.log(category)
+  setloading(true)
    const getProducts = async () => {
      try {
        const res = await axios.get(
@@ -53,6 +55,7 @@ useEffect(() => {
            ? `http://localhost:8000/api/products/?category=${category}`
            : "http://localhost:8000/api/products/"
        );
+       setloading(false)
        setFilteredProducts(res.data);
     
      } catch (err) {
@@ -65,6 +68,7 @@ useEffect(() => {
  }, [category]);
  
  useEffect(()=>{
+  setloading(true)
   const getProducts = async () => {
     try {
       const res = await axios.get(
@@ -89,6 +93,7 @@ useEffect(() => {
         );
       }
    
+      setloading(false)
     } catch (err) {
       console.log(err)
     }
@@ -283,13 +288,19 @@ useEffect(() => {
        
         
        </div>
+
        <div className="right">
-       {
+        { loading===true ? <>
+        
+        <img src={loadingproduct}/></>:<>
+        {
             filteredProducts.map((item)=>
             {
               return (<Card item={item} id={item.id} key={item.id}/>)
             })
-           }
+       }
+        </>}
+      
            
             
        </div>

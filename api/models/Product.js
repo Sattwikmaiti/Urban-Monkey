@@ -13,6 +13,12 @@ const ProductSchema = new mongoose.Schema(
     oldPrice: { type: Number, required: true },
 
     newPrice: { type: Number, required: true },
+    price_id:{
+      type:String,required:true,
+    },
+    quantity:{
+      type:Number,required:true,default:0
+    }
 
     
   },

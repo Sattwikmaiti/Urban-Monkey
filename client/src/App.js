@@ -16,7 +16,7 @@ import {
 
 
 const App = () => {
-  let user =true;
+  let user =false;
   return (
     <Router>
       <Routes>
@@ -28,6 +28,7 @@ const App = () => {
         <Route path="/success" element={<Success />}/>
         <Route path="/login" element={user ? <Home />:  <Login />}/>
         <Route path="/register"element={user ? <Home />: <Register />}/>
+        <Route path="/cart"element={user ? <Cart />: <Register />}/>
        
       </Routes>
     </Router>

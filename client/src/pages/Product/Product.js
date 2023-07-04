@@ -9,9 +9,13 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import BalanceIcon from "@mui/icons-material/Balance";
 import { useLocation } from "react-router";
 import axios from "axios"
+import {useSelector,useDispatch} from "react-redux"
+import  {addProduct} from "../../redux/cartRedux.js"
+import loadingproduct from "../images/productloader.gif"
 const Product = () => {
+  const [loading,setloading] =useState(false)
  
-  
+  const dispatch=useDispatch()
   const [select,setselect]=useState(0)
   const [quantity,setquantity] = useState(1);
 
@@ -22,14 +26,14 @@ const Product = () => {
   const [data,setData]=useState()
 
   useEffect(() => {
-   
+  setloading(true)
    const getProducts = async () => {
      try {
        const res = await axios.get(
         `http://localhost:8000/api/products/find/${id}`
           
        );
-
+ setloading(false)
        setData(res.data);
        //console.log(data)
      } catch (err) {
@@ -39,12 +43,24 @@ const Product = () => {
    //console.log(data)
  
    getProducts();
- }, [data,id]);
+ }, [id]);
+
+ const handleaddtocart=()=>
+ {  console.log(data)
+    const price=data?.newPrice;
+    const id= data?._id;
+   
+     dispatch(addProduct({...data,id,price,quantity}))
+
+ }
  const images=[data?.img1,data?.img2];
   return (
     <div>
       <Navbar />
-<div className="boxx">
+      {
+        loading ===true ? <><img src={loadingproduct}/></> :
+        <>
+        <div className="boxx">
 <div className="imagess">
 <div className="preview">
 
@@ -75,7 +91,7 @@ const Product = () => {
   <button  onClick={()=>setquantity((prev)=>prev+1)}>+</button>
 </div>
 <button>
-<div className="add">
+<div className="add" onClick={handleaddtocart}>
   <AddShoppingCartIcon /> <span>Add to Cart</span>
 </div>
 </button>
@@ -104,7 +120,9 @@ const Product = () => {
       </div>
       
 </div>
-      
+      </>
+      }
+
       <Footer />
     </div>
   )

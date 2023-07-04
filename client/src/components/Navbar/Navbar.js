@@ -7,8 +7,12 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Badge from '@mui/material/Badge';
 import Cart from '../Cart/Cart.js'
 import logo from "../images/logo.png"
+import {useSelector} from 'react-redux'
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [opencart,setopencart]=useState(false);
+  const cart=useSelector(state=>state.cart);
+  console.log(cart);
   return (
     <div>
       <div className="navbar">
@@ -31,8 +35,11 @@ const Navbar = () => {
           <SearchIcon/>
            <PersonIcon/>
            <FavoriteIcon/>
-           <Badge badgeContent={4} color="secondary">
-            <AddShoppingCartIcon onClick={()=>setopencart(!opencart)} />
+           <Badge badgeContent={cart.quantity} color="secondary">
+            <Link to="/cart">
+            <AddShoppingCartIcon  />
+            </Link>
+            
            </Badge>
 
           </div>

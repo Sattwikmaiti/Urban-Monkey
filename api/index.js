@@ -27,6 +27,9 @@ app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
-app.listen(process.env.PORT || 5000, () => {
-  console.log("Backend server is running!");
-});
+
+// This is your test secret API key.
+
+
+
+app.listen(8000, () => console.log('Running on port 8000'));
