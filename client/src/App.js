@@ -5,6 +5,7 @@ import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import Cart from "./components/Cart/Cart";
 import Success from "./pages/Success/Success";
+import Movie from "./pages/movie_recommender.js/MR.js"
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,7 +30,7 @@ const App = () => {
         <Route path="/login" element={user ? <Home />:  <Login />}/>
         <Route path="/register"element={user ? <Home />: <Register />}/>
         <Route path="/cart"element={user ? <Cart />: <Register />}/>
-       
+         <Route path="/movie" element = {<Movie />}/>
       </Routes>
     </Router>
   );
